@@ -1,0 +1,29 @@
+{
+  "name": "my-astro-app",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "astro": "astro",
+    "build": "astro check && astro build",
+    "dev": "sst dev astro dev",
+    "preview": "astro preview",
+    "deploy": "sst deploy",
+    "start": "astro dev"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.10",
+    "@aws-sdk/client-s3": "^3.564.0",
+    "@aws-sdk/s3-request-presigner": "^3.564.0",
+    "@trpc/client": "^10.45.2",
+    "@trpc/server": "^10.45.2",
+    "astro": "^4.7.0",
+    "astro-sst": "2.41.5",
+    "sst": "ion",
+    "typescript": "^5.4.5",
+    "zod": "^3.23.4"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0"
+  }
+}
