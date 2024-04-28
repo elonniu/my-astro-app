@@ -30,6 +30,9 @@ export default $config({
       handler: "client.handler",
     });
 
+    const api = new sst.aws.ApiGatewayV2("MyApi");
+    api.route("ANY /{proxy+}", "apigw.handler");
+
     const site = new sst.aws.Astro("MyWeb", {
       link: [bucket, trpc],
     });
